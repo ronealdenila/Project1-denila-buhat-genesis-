@@ -23,8 +23,7 @@ Partial Class Enrollment2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Enrollment2))
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonEnroll = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.Label40 = New System.Windows.Forms.Label()
@@ -47,6 +46,7 @@ Partial Class Enrollment2
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
@@ -60,46 +60,32 @@ Partial Class Enrollment2
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.ButtonCancel = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.PanelFooter.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button4
+        'ButtonEnroll
         '
-        Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Bebas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button4.Location = New System.Drawing.Point(12, 708)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(134, 45)
-        Me.Button4.TabIndex = 98
-        Me.Button4.TabStop = False
-        Me.Button4.Text = "Back"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Bebas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button1.Location = New System.Drawing.Point(668, 698)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(177, 65)
-        Me.Button1.TabIndex = 24
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "Enroll Now"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.ButtonEnroll.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.ButtonEnroll.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ButtonEnroll.FlatAppearance.BorderSize = 0
+        Me.ButtonEnroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEnroll.Font = New System.Drawing.Font("Bebas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEnroll.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.ButtonEnroll.Location = New System.Drawing.Point(660, 0)
+        Me.ButtonEnroll.Name = "ButtonEnroll"
+        Me.ButtonEnroll.Size = New System.Drawing.Size(200, 62)
+        Me.ButtonEnroll.TabIndex = 24
+        Me.ButtonEnroll.TabStop = False
+        Me.ButtonEnroll.Text = "Enroll Now"
+        Me.ButtonEnroll.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -408,6 +394,16 @@ Partial Class Enrollment2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Person to be Contacted in Case of Emergency"
         '
+        'TextBox5
+        '
+        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox5.Font = New System.Drawing.Font("Oswald Regular", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(13, 141)
+        Me.TextBox5.Multiline = True
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(779, 29)
+        Me.TextBox5.TabIndex = 113
+        '
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
@@ -562,28 +558,15 @@ Partial Class Enrollment2
         '
         'PictureBox1
         '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-5, 6)
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = Global.Project1.My.Resources.Resources.LOGOFINAL
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(140, 99)
+        Me.PictureBox1.Size = New System.Drawing.Size(140, 107)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 99
         Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(-1, -1)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(872, 111)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 100
-        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -591,35 +574,60 @@ Partial Class Enrollment2
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Oswald Stencil", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label1.Image = CType(resources.GetObject("Label1.Image"), System.Drawing.Image)
-        Me.Label1.Location = New System.Drawing.Point(245, 33)
+        Me.Label1.Location = New System.Drawing.Point(245, 32)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(504, 39)
         Me.Label1.TabIndex = 113
         Me.Label1.Text = "PMDU STUDENT GENERAL INFORMATION SHEET"
         '
-        'TextBox5
+        'Panel1
         '
-        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TextBox5.Font = New System.Drawing.Font("Oswald Regular", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(13, 141)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(779, 29)
-        Me.TextBox5.TabIndex = 113
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = Global.Project1.My.Resources.Resources._32b877ed4aa7778cc7d43ebb7d95a6f1
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(870, 107)
+        Me.Panel1.TabIndex = 114
+        '
+        'PanelFooter
+        '
+        Me.PanelFooter.Controls.Add(Me.ButtonCancel)
+        Me.PanelFooter.Controls.Add(Me.ButtonEnroll)
+        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelFooter.Location = New System.Drawing.Point(0, 703)
+        Me.PanelFooter.Name = "PanelFooter"
+        Me.PanelFooter.Padding = New System.Windows.Forms.Padding(10, 0, 10, 10)
+        Me.PanelFooter.Size = New System.Drawing.Size(870, 72)
+        Me.PanelFooter.TabIndex = 115
+        '
+        'ButtonCancel
+        '
+        Me.ButtonCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.ButtonCancel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.ButtonCancel.FlatAppearance.BorderSize = 0
+        Me.ButtonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonCancel.Font = New System.Drawing.Font("Bebas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCancel.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.ButtonCancel.Location = New System.Drawing.Point(10, 0)
+        Me.ButtonCancel.Name = "ButtonCancel"
+        Me.ButtonCancel.Size = New System.Drawing.Size(200, 62)
+        Me.ButtonCancel.TabIndex = 25
+        Me.ButtonCancel.TabStop = False
+        Me.ButtonCancel.Text = "Cancel"
+        Me.ButtonCancel.UseVisualStyleBackColor = False
         '
         'Enrollment2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(870, 775)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PanelFooter)
         Me.Name = "Enrollment2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Enrollment2"
@@ -628,13 +636,13 @@ Partial Class Enrollment2
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.PanelFooter.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonEnroll As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label42 As Label
     Friend WithEvents Label40 As Label
@@ -670,7 +678,9 @@ Partial Class Enrollment2
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents Label26 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelFooter As Panel
+    Friend WithEvents ButtonCancel As Button
 End Class

@@ -22,26 +22,14 @@ Partial Class Portal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Portal))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.PanelPortal = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PanelPortal.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Oswald Stencil", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label1.Location = New System.Drawing.Point(200, 160)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 50)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "PMDU"
         '
         'Label4
         '
@@ -49,31 +37,21 @@ Partial Class Portal
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Oswald Regular", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label4.Location = New System.Drawing.Point(170, 210)
+        Me.Label4.Location = New System.Drawing.Point(166, 283)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(169, 32)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "STUDENT PORTAL"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(507, 145)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bebas", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button1.Location = New System.Drawing.Point(161, 291)
+        Me.Button1.Location = New System.Drawing.Point(161, 340)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 110)
         Me.Button1.TabIndex = 12
@@ -82,40 +60,61 @@ Partial Class Portal
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bebas", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button2.Location = New System.Drawing.Point(161, 422)
+        Me.Button2.Location = New System.Drawing.Point(161, 474)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(178, 110)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "ENROLL"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'PanelPortal
+        '
+        Me.PanelPortal.BackColor = System.Drawing.Color.Transparent
+        Me.PanelPortal.BackgroundImage = Global.Project1.My.Resources.Resources._32b877ed4aa7778cc7d43ebb7d95a6f1
+        Me.PanelPortal.Controls.Add(Me.Label4)
+        Me.PanelPortal.Controls.Add(Me.PictureBox1)
+        Me.PanelPortal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelPortal.Location = New System.Drawing.Point(0, 0)
+        Me.PanelPortal.Name = "PanelPortal"
+        Me.PanelPortal.Size = New System.Drawing.Size(509, 596)
+        Me.PanelPortal.TabIndex = 14
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox1.Image = Global.Project1.My.Resources.Resources.LOGOFINAL
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(509, 271)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Portal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(509, 596)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PanelPortal)
         Me.Name = "Portal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PMDU Student Portal"
+        Me.PanelPortal.ResumeLayout(False)
+        Me.PanelPortal.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents PanelPortal As Panel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

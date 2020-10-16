@@ -22,12 +22,8 @@ Partial Class Enrollment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Enrollment))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -40,73 +36,51 @@ Partial Class Enrollment
         Me.Label33 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.address = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.email = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.sname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonFemale = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonMale = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.fname = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.birthdate = New System.Windows.Forms.DateTimePicker()
         Me.mname = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ButtonNext = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Oswald Stencil", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label1.Image = CType(resources.GetObject("Label1.Image"), System.Drawing.Image)
-        Me.Label1.Location = New System.Drawing.Point(237, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(504, 39)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "PMDU STUDENT GENERAL INFORMATION SHEET"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-6, 7)
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = Global.Project1.My.Resources.Resources.LOGOFINAL
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(140, 99)
+        Me.PictureBox1.Size = New System.Drawing.Size(140, 111)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(872, 111)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 16
-        Me.PictureBox2.TabStop = False
         '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -119,47 +93,31 @@ Partial Class Enrollment
         Me.GroupBox1.Controls.Add(Me.Label33)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.address)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.email)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label32)
         Me.GroupBox1.Controls.Add(Me.Label31)
         Me.GroupBox1.Controls.Add(Me.Label30)
         Me.GroupBox1.Controls.Add(Me.sname)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.GroupBox1.Controls.Add(Me.RadioButtonFemale)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.RadioButtonMale)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.fname)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.birthdate)
         Me.GroupBox1.Controls.Add(Me.mname)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Font = New System.Drawing.Font("Oswald Regular", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(1, 117)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(871, 676)
+        Me.GroupBox1.Size = New System.Drawing.Size(871, 548)
         Me.GroupBox1.TabIndex = 99
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Personal Profile"
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Bebas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button1.Location = New System.Drawing.Point(680, 586)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(177, 65)
-        Me.Button1.TabIndex = 114
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label13
         '
@@ -318,15 +276,15 @@ Partial Class Enrollment
         Me.Label15.TabIndex = 102
         Me.Label15.Text = "Program intended to enroll"
         '
-        'TextBox5
+        'address
         '
-        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TextBox5.Font = New System.Drawing.Font("Oswald Regular", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(42, 304)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(779, 29)
-        Me.TextBox5.TabIndex = 101
+        Me.address.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.address.Font = New System.Drawing.Font("Oswald Regular", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.address.Location = New System.Drawing.Point(42, 304)
+        Me.address.Multiline = True
+        Me.address.Name = "address"
+        Me.address.Size = New System.Drawing.Size(779, 29)
+        Me.address.TabIndex = 101
         '
         'Label9
         '
@@ -341,15 +299,15 @@ Partial Class Enrollment
         Me.Label9.TabIndex = 100
         Me.Label9.Text = "Complete City Address"
         '
-        'TextBox4
+        'email
         '
-        Me.TextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TextBox4.Font = New System.Drawing.Font("Oswald Regular", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(42, 215)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(197, 29)
-        Me.TextBox4.TabIndex = 99
+        Me.email.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.email.Font = New System.Drawing.Font("Oswald Regular", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.email.Location = New System.Drawing.Point(42, 215)
+        Me.email.Multiline = True
+        Me.email.Name = "email"
+        Me.email.Size = New System.Drawing.Size(197, 29)
+        Me.email.TabIndex = 99
         '
         'Label8
         '
@@ -429,18 +387,18 @@ Partial Class Enrollment
         Me.Label2.TabIndex = 85
         Me.Label2.Text = "Surname"
         '
-        'RadioButton2
+        'RadioButtonFemale
         '
-        Me.RadioButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Oswald Regular", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(330, 148)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(85, 33)
-        Me.RadioButton2.TabIndex = 94
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Female"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RadioButtonFemale.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.RadioButtonFemale.AutoSize = True
+        Me.RadioButtonFemale.Font = New System.Drawing.Font("Oswald Regular", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButtonFemale.Location = New System.Drawing.Point(330, 148)
+        Me.RadioButtonFemale.Name = "RadioButtonFemale"
+        Me.RadioButtonFemale.Size = New System.Drawing.Size(85, 33)
+        Me.RadioButtonFemale.TabIndex = 94
+        Me.RadioButtonFemale.TabStop = True
+        Me.RadioButtonFemale.Text = "Female"
+        Me.RadioButtonFemale.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -455,18 +413,18 @@ Partial Class Enrollment
         Me.Label3.TabIndex = 86
         Me.Label3.Text = "First Name"
         '
-        'RadioButton1
+        'RadioButtonMale
         '
-        Me.RadioButton1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Oswald Regular", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(243, 148)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(68, 33)
-        Me.RadioButton1.TabIndex = 93
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Male"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RadioButtonMale.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.RadioButtonMale.AutoSize = True
+        Me.RadioButtonMale.Font = New System.Drawing.Font("Oswald Regular", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButtonMale.Location = New System.Drawing.Point(243, 148)
+        Me.RadioButtonMale.Name = "RadioButtonMale"
+        Me.RadioButtonMale.Size = New System.Drawing.Size(68, 33)
+        Me.RadioButtonMale.TabIndex = 93
+        Me.RadioButtonMale.TabStop = True
+        Me.RadioButtonMale.Text = "Male"
+        Me.RadioButtonMale.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -505,16 +463,17 @@ Partial Class Enrollment
         Me.fname.Size = New System.Drawing.Size(242, 29)
         Me.fname.TabIndex = 88
         '
-        'DateTimePicker1
+        'birthdate
         '
-        Me.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Oswald Regular", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(43, 150)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(104, 29)
-        Me.DateTimePicker1.TabIndex = 91
-        Me.DateTimePicker1.Value = New Date(1999, 10, 27, 0, 0, 0, 0)
+        Me.birthdate.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.birthdate.CustomFormat = "dd-MM-yyyy"
+        Me.birthdate.Font = New System.Drawing.Font("Oswald Regular", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.birthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.birthdate.Location = New System.Drawing.Point(43, 150)
+        Me.birthdate.Name = "birthdate"
+        Me.birthdate.Size = New System.Drawing.Size(104, 29)
+        Me.birthdate.TabIndex = 91
+        Me.birthdate.Value = New Date(1999, 10, 27, 0, 0, 0, 0)
         '
         'mname
         '
@@ -539,30 +498,77 @@ Partial Class Enrollment
         Me.Label5.TabIndex = 90
         Me.Label5.Text = "Birthdate"
         '
+        'ButtonNext
+        '
+        Me.ButtonNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.ButtonNext.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ButtonNext.FlatAppearance.BorderSize = 0
+        Me.ButtonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonNext.Font = New System.Drawing.Font("Bebas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonNext.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.ButtonNext.Location = New System.Drawing.Point(683, 0)
+        Me.ButtonNext.Name = "ButtonNext"
+        Me.ButtonNext.Size = New System.Drawing.Size(177, 62)
+        Me.ButtonNext.TabIndex = 114
+        Me.ButtonNext.TabStop = False
+        Me.ButtonNext.Text = "Next"
+        Me.ButtonNext.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = Global.Project1.My.Resources.Resources._32b877ed4aa7778cc7d43ebb7d95a6f1
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(870, 111)
+        Me.Panel1.TabIndex = 100
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Oswald Stencil", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Label1.Location = New System.Drawing.Point(225, 34)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(504, 39)
+        Me.Label1.TabIndex = 115
+        Me.Label1.Text = "PMDU STUDENT GENERAL INFORMATION SHEET"
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.ButtonNext)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(0, 703)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(0, 0, 10, 10)
+        Me.Panel2.Size = New System.Drawing.Size(870, 72)
+        Me.Panel2.TabIndex = 115
+        '
         'Enrollment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(870, 775)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel2)
         Me.Name = "Enrollment"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Enrollment"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Button3 As Button
@@ -576,23 +582,26 @@ Partial Class Enrollment
     Friend WithEvents Label33 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents address As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents email As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label32 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents sname As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButtonFemale As RadioButton
     Friend WithEvents Label3 As Label
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButtonMale As RadioButton
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents fname As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents birthdate As DateTimePicker
     Friend WithEvents mname As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonNext As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
 End Class
